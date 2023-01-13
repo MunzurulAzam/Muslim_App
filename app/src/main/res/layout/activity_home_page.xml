@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9D9D9"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="casual"
+        android:text="আসসালামুয়ালাইকুম"
+        android:textColor="#040404"
+        android:textSize="20sp" />
+    <!--    for testing-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="131dp"
+        android:layout_marginBottom="0dp"
+        android:background="#FFFFFF">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="114dp"
+            android:layout_height="102dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="245dp"
+            app:cardBackgroundColor="#D9D9D9"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="90dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:text="কুরআনের দোয়া"
+                android:textColor="#010101"
+                android:textSize="12sp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+
+                android:layout_marginTop="30dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/quran_er_dua" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="114dp"
+            android:layout_height="102dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="245dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="51dp"
+            app:cardBackgroundColor="#D9D9D9"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="78dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="41dp"
+                android:layout_marginTop="10dp"
+                android:text="দোয়া"
+                android:textColor="#010101"
+                android:textSize="12sp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView1"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:layout_marginTop="28dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/doa02" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="114dp"
+            android:layout_height="102dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginEnd="244dp"
+            app:cardBackgroundColor="#D9D9D9"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="90dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="10dp"
+                android:text="জিয়ারত"
+                android:textColor="#010101"
+                android:textSize="12sp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView3"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:layout_marginTop="30dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/ziyarot" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="114dp"
+            android:layout_height="102dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="245dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginEnd="52dp"
+            app:cardBackgroundColor="#D9D9D9"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:text=" জিকির ও নামাজ"
+                android:textColor="#010101"
+                android:textSize="12sp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView4"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:layout_marginTop="30dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/namaj2" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="114dp"
+            android:layout_height="102dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="271dp"
+            android:layout_marginEnd="244dp"
+            app:cardBackgroundColor="#D9D9D9"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="90dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="41dp"
+                android:layout_marginTop="10dp"
+                android:text="আমল"
+                android:textColor="#010101"
+                android:textSize="12sp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="29dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/amol2" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="114dp"
+            android:layout_height="102dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="244dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginEnd="52dp"
+            app:cardBackgroundColor="#D9D9D9"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="90dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:text="তদবির"
+                android:textColor="#010101"
+                android:textSize="12sp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView6"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:layout_marginTop="30dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/todbir2" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="114dp"
+            android:layout_height="102dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="395dp"
+            android:layout_marginEnd="244dp"
+            app:cardBackgroundColor="#D9D9D9"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="90dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="41dp"
+                android:layout_marginTop="10dp"
+                android:text="জিকির"
+                android:textColor="#010101"
+                android:textSize="12sp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView7"
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:layout_marginTop="30dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/zikir" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/tasbeehCard"
+            android:layout_width="114dp"
+            android:layout_height="102dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="245dp"
+            android:layout_marginTop="395dp"
+            android:layout_marginEnd="52dp"
+            app:cardBackgroundColor="#D9D9D9"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="90dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="41dp"
+                android:layout_marginTop="10dp"
+                android:text="তসবি"
+                android:textColor="#010101"
+                android:textSize="12sp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationView8"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginTop="30dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/tosbi2" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="152dp"
+        android:text="শুভ সকাল"
+        android:textColor="#090808"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="78dp"
+        android:text="Date"
+        android:textColor="#090808"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
