@@ -33,11 +33,12 @@
         android:background="#FFFFFF">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/quranErDua"
             android:layout_width="114dp"
             android:layout_height="102dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
 
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="52dp"
             android:layout_marginTop="23dp"
@@ -68,11 +69,12 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/dua"
             android:layout_width="114dp"
             android:layout_height="102dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
 
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="245dp"
             android:layout_marginTop="23dp"
@@ -102,11 +104,12 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/ziyarot"
             android:layout_width="114dp"
             android:layout_height="102dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
 
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="52dp"
             android:layout_marginTop="147dp"
@@ -136,11 +139,12 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/zikirAndNamaj"
             android:layout_width="114dp"
             android:layout_height="102dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
 
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="245dp"
             android:layout_marginTop="147dp"
@@ -170,11 +174,12 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/amol"
             android:layout_width="114dp"
             android:layout_height="102dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
 
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="52dp"
             android:layout_marginTop="271dp"
@@ -204,11 +209,12 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/todbir"
             android:layout_width="114dp"
             android:layout_height="102dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
 
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="244dp"
             android:layout_marginTop="270dp"
@@ -238,11 +244,12 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/zikir"
             android:layout_width="114dp"
             android:layout_height="102dp"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
 
+            android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="52dp"
             android:layout_marginTop="395dp"

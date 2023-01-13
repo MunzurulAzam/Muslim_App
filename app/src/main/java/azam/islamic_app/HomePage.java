@@ -16,6 +16,13 @@ import java.util.Calendar;
 public class HomePage extends AppCompatActivity implements View.OnClickListener {
 
     public CardView card1;
+    public CardView quranAndDua;
+    public CardView dua;
+    public CardView zikirNamaj;
+    public CardView amol;
+    public CardView todbir;
+    public CardView zikir;
+    public CardView ziyarat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +43,27 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener 
 
         card1.setOnClickListener(this);
 
+        quranAndDua = findViewById(R.id.quranErDua);
+        quranAndDua.setOnClickListener(this);
+
+        dua = findViewById(R.id.dua);
+        dua.setOnClickListener(this);
+
+        zikirNamaj = findViewById(R.id.zikirAndNamaj);
+        zikirNamaj.setOnClickListener(this);
+
+        amol = findViewById(R.id.amol);
+        amol.setOnClickListener(this);
+
+        todbir = findViewById(R.id.todbir);
+        todbir.setOnClickListener(this);
+
+        zikir = findViewById(R.id.zikir);
+        zikir.setOnClickListener(this);
+
+        ziyarat = findViewById(R.id.ziyarot);
+        ziyarat.setOnClickListener(this);
+
 
     }
 
@@ -49,6 +77,41 @@ public class HomePage extends AppCompatActivity implements View.OnClickListener 
 
             case R.id.tasbeehCard :
                 i = new Intent(this,TasbeehApp.class);
+                startActivity(i);
+                break;
+
+            case R.id.quranErDua:
+                i = new Intent(this,QuranErDua.class);
+                startActivity(i);
+                break;
+
+            case R.id.dua:
+                i = new Intent(this,Dua.class);
+                startActivity(i);
+                break;
+
+            case R.id.ziyarot:
+                i = new Intent(this,Ziyarot.class);
+                startActivity(i);
+                break;
+
+            case R.id.zikirAndNamaj:
+                i = new Intent(this,ZikirAndNamaj.class);
+                startActivity(i);
+                break;
+
+            case R.id.amol:
+                i = new Intent(this,Amol.class);
+                startActivity(i);
+                break;
+
+            case R.id.todbir:
+                i = new Intent(this,Todbir.class);
+                startActivity(i);
+                break;
+
+            case R.id.zikir:
+                i = new Intent(this,Zikir.class);
                 startActivity(i);
                 break;
         }

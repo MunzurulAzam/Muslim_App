@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Islamic_App">
         <activity
+            android:name=".Zikir"
+            android:exported="false" />
+        <activity
+            android:name=".Todbir"
+            android:exported="false" />
+        <activity
+            android:name=".Amol"
+            android:exported="false" />
+        <activity
+            android:name=".ZikirAndNamaj"
+            android:exported="false" />
+        <activity
+            android:name=".Ziyarot"
+            android:exported="false" />
+        <activity
+            android:name=".Dua"
+            android:exported="false" />
+        <activity
+            android:name=".QuranErDua"
+            android:exported="false" />
+        <activity
             android:name=".TasbeehApp"
             android:exported="false" />
         <activity
