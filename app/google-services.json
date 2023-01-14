@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "831928341721",
+    "firebase_url": "https://islamicapp-6b802-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "islamicapp-6b802",
+    "storage_bucket": "islamicapp-6b802.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:831928341721:android:45e96bc75437e933241ac8",
+        "android_client_info": {
+          "package_name": "azam.islamic_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "831928341721-goappqmp434hoc4v5bku0btii7ehj501.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "azam.islamic_app",
+            "certificate_hash": "c47855ce63f5038c4165f2b272de2eec70d7f533"
+          }
+        },
+        {
+          "client_id": "831928341721-riokb31tioq00rtbuomr85t626i1ue4c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl91RtvzxKOjFcEk7Wo4f4hRM0O_bRGpw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "831928341721-riokb31tioq00rtbuomr85t626i1ue4c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

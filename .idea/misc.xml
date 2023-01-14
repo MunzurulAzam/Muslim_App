@@ -5,16 +5,17 @@
       <map>
         <entry key="app/src/main/res/drawable-v24/rounded_back_ground.xml" value="0.1405" />
         <entry key="app/src/main/res/layout/activity_amol.xml" value="0.1296670030272452" />
-        <entry key="app/src/main/res/layout/activity_dua.xml" value="0.13723511604439959" />
+        <entry key="app/src/main/res/layout/activity_dua.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_home_page.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1301715438950555" />
         <entry key="app/src/main/res/layout/activity_quran_er_dua.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_tasbeeh_app.xml" value="0.1301715438950555" />
+        <entry key="app/src/main/res/layout/activity_tasbeeh_app.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_todbir.xml" value="0.1296670030272452" />
         <entry key="app/src/main/res/layout/activity_zikir.xml" value="0.13723511604439959" />
         <entry key="app/src/main/res/layout/activity_zikir_and_namaj.xml" value="0.1296670030272452" />
         <entry key="app/src/main/res/layout/activity_ziyarot.xml" value="0.13723511604439959" />
         <entry key="app/src/main/res/layout/item_design.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/single_shura_row.xml" value="0.335" />
       </map>
     </option>
   </component>
