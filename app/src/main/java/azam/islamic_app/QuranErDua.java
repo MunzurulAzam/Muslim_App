@@ -37,26 +37,26 @@ public class QuranErDua extends AppCompatActivity {
 
         Query query = FirebaseDatabase.getInstance()
                 .getReference()
-                .child("কোরানের দোয়া").child("কোরানের সুরা").child("1").child("ayat");
-        FirebaseRecyclerOptions<ShuraAyat> options =
-                new FirebaseRecyclerOptions.Builder<ShuraAyat>()
-                        .setQuery(query, ShuraAyat.class)
+                .child("কোরানের দোয়া").child("কোরানের সুরা").child("কোরানের সুরা নাম সমূহ");
+        FirebaseRecyclerOptions<SuraShumoho> options =
+                new FirebaseRecyclerOptions.Builder<SuraShumoho>()
+                        .setQuery(query, SuraShumoho.class)
                         .build();
 
 
-        FirebaseRecyclerAdapter adapter = new FirebaseRecyclerAdapter<ShuraAyat, QuranErDua.PackageViewHolder>(options) {
+        FirebaseRecyclerAdapter adapter = new FirebaseRecyclerAdapter<SuraShumoho, QuranErDua.PackageViewHolder>(options) {
             @Override
             public QuranErDua.PackageViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
                 View view = LayoutInflater.from(parent.getContext())
-                        .inflate(R.layout.single_shura_row, parent, false);
+                        .inflate(R.layout.item_design, parent, false);
                 return new QuranErDua.PackageViewHolder(view);
             }
 
             @Override
-            protected void onBindViewHolder(QuranErDua.PackageViewHolder holder, int position, ShuraAyat shuraAyat) {
-                holder.setarabic(shuraAyat.getArabic());
-                holder.setuccharon(shuraAyat.getUccharon());
-                holder.setbanglameaning(shuraAyat.getBanglameaning());
+            protected void onBindViewHolder(QuranErDua.PackageViewHolder holder, int position, SuraShumoho suraShumoho) {
+                holder.setshura_name(suraShumoho.getShura_name());
+//                holder.setuccharon(shuraAyat.getUccharon());
+//                holder.setbanglameaning(shuraAyat.getBanglameaning());
     }
         };
         recyclerView.setAdapter(adapter);
@@ -75,20 +75,26 @@ public class QuranErDua extends AppCompatActivity {
             mView = itemView;
         }
 
-        public void setarabic(String bazar_name) {
-            TextView bazarname = (TextView) mView.findViewById(R.id.arabicTxtView);
-            bazarname.setText(bazar_name);
+        public void setshura_name(String shura_name_txt) {
+            TextView shura_name = (TextView) mView.findViewById(R.id.sura);
+            shura_name.setText(shura_name_txt);
         }
 
-        public void setuccharon(String bazar_area) {
-            TextView bazararea = (TextView) mView.findViewById(R.id.ucharonTxtView);
-            bazararea.setText(bazar_area);
-        }
 
-        public void setbanglameaning(String bazar_district) {
-            TextView bazardistrict = (TextView) mView.findViewById(R.id.anubadTxtView);
-            bazardistrict.setText(bazar_district);
-        }
+//        public void setarabic(String arabic_txt) {
+//            TextView arabic = (TextView) mView.findViewById(R.id.arabicTxtView);
+//            arabic.setText(arabic_txt);
+//        }
+
+//        public void setuccharon(String uccharon_txt) {
+//            TextView uccharon = (TextView) mView.findViewById(R.id.ucharonTxtView);
+//            uccharon.setText(uccharon_txt);
+//        }
+//
+//        public void setbanglameaning(String banglameaning_txt) {
+//            TextView banglameaning = (TextView) mView.findViewById(R.id.anubadTxtView);
+//            banglameaning.setText(banglameaning_txt);
+//        }
 
     }
 
