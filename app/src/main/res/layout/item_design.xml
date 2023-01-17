@@ -1,32 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp"
+    android:background="@drawable/round_corner"
+    android:gravity="center"
+    android:padding="5dp"
+    android:layout_margin="15dp">
 
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="85dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:background="@drawable/rounded_back_ground">
+<!--        <TextView-->
+<!--            android:id="@+id/suraNumber"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="XXX"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="#040404"-->
+<!--            android:textSize="20sp" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/dot"-->
+<!--            android:layout_toRightOf="@+id/suraNumber"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="."-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="#040404"-->
+<!--            android:textSize="20sp" />-->
 
         <TextView
+            android:layout_toRightOf="@+id/dot"
             android:id="@+id/sura"
-            android:layout_width="220dp"
-            android:layout_height="45dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
             android:text="TextView"
+            android:gravity="center"
             android:textColor="#040404"
             android:textSize="19sp" />
-    </RelativeLayout>
+
 
 </RelativeLayout>

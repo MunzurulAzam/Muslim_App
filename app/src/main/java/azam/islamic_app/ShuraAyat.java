@@ -5,6 +5,7 @@ public class ShuraAyat {
     String uccharon;
     String banglameaning;
 
+
     public ShuraAyat() {
     }
 
