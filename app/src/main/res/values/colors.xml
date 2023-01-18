@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="maingray">#FFD9D9D9</color>
+    <color name="tashbee_btn_color">#FFFF0032</color>
 </resources>
