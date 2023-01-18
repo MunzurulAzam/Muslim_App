@@ -65,11 +65,30 @@
             android:text="Reset" />
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/appbarLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/tasbeehBackBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+
+    </LinearLayout>
+
     <Button
         android:id="@+id/btnTasbeeh"
         android:layout_width="254dp"
         android:layout_height="138dp"
-        android:text="Start"
+        android:text="Tap"
         android:textSize="28dp"
         android:textColor="@color/black"
         android:gravity="center"
