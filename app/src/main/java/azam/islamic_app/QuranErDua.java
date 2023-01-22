@@ -81,6 +81,7 @@ public class QuranErDua extends AppCompatActivity {
                 holder.setshura_name(suraShumoho.getShura_name());
                 holder.mView.setOnClickListener(new View.OnClickListener() {
                     @Override
+                    //recycler view pull page
                     public void onClick(View v) {
                         System.out.println(String.valueOf(holder.getBindingAdapterPosition()+1));
                         Intent myIntent = new Intent(QuranErDua.this,SingleSuraAyat.class);
@@ -89,6 +90,8 @@ public class QuranErDua extends AppCompatActivity {
 
                     }
                 });
+
+                //recycler view pull page end
     }
         };
         recyclerView.setAdapter(adapter);
