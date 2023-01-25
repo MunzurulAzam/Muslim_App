@@ -93,6 +93,7 @@ public class SingleSuraAyat extends AppCompatActivity {
         }
 
     }
+    //nice
 
 
 
