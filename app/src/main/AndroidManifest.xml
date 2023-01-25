@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Islamic_App">
         <activity
+            android:name=".zikirListInfo"
+            android:exported="false" />
+        <activity
+            android:name=".zikirErList"
+            android:exported="false" />
+        <activity
             android:name=".SingleSuraAyat"
             android:exported="false" />
         <activity
