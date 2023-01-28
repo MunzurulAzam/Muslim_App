@@ -18,3 +18,5 @@ public class Ziyarot extends AppCompatActivity {
         setContentView(R.layout.activity_ziyarot);
     }
 }
+
+
