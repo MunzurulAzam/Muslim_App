@@ -1,6 +1,9 @@
 package azam.islamic_app;
 
+import static androidx.appcompat.app.AppCompatDelegate.setDefaultNightMode;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -9,6 +12,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -20,10 +24,29 @@ public class SingleSuraAyat extends AppCompatActivity {
     RecyclerView recyclerView;
     String shuraNumber;
 
+    ImageView imageView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_single_sura_ayat);
+
+        setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+//        getSupportActionBar().hide();
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        getWindow().setStatusBarColor(this.getResources().getColor(R.color.white));
+
+        //        start hook
+        imageView = findViewById(R.id.quranerDuyaBackbtn);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+//        hooks end
+
+
         Intent intent = getIntent();
         shuraNumber = intent.getStringExtra("shuraNumber");
 
