@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -24,6 +25,7 @@ import com.google.firebase.database.Query;
 public class Zikir extends AppCompatActivity {
 
     RecyclerView recyclerView;
+    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,17 @@ public class Zikir extends AppCompatActivity {
 //        getSupportActionBar().hide();
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
         getWindow().setStatusBarColor(this.getResources().getColor(R.color.white));
+
+
+        //        start hook
+        imageView = findViewById(R.id.quranerDuyaBackbtn);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+//        hooks end
 
 
         //        start code
