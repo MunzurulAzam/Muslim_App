@@ -25,7 +25,7 @@ import com.google.firebase.database.Query;
 public class Zikir extends AppCompatActivity {
 
 
-    String key;
+    String zikirnumber;
 
     RecyclerView recyclerView;
     ImageView imageView;
@@ -87,7 +87,7 @@ public class Zikir extends AppCompatActivity {
                     public void onClick(View v) {
                         System.out.println(String.valueOf(holder.getBindingAdapterPosition()+1));
                         Intent myIntent = new Intent(Zikir.this,ZikirListInfo.class);
-                        myIntent.putExtra("key",String.valueOf(holder.getBindingAdapterPosition()+1));
+                        myIntent.putExtra("zikirnumber",String.valueOf(holder.getBindingAdapterPosition()+1));
                         startActivity(myIntent);
 
                     }

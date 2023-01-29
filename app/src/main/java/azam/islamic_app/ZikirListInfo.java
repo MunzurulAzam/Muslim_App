@@ -24,7 +24,7 @@ public class ZikirListInfo extends AppCompatActivity {
 
     RecyclerView recyclerView;
 
-    String key;
+    String zikirnumber;
 
     ImageView imageView;
 
@@ -50,7 +50,7 @@ public class ZikirListInfo extends AppCompatActivity {
 
 
         Intent intent = getIntent();
-        key = intent.getStringExtra("key");
+        zikirnumber = intent.getStringExtra("zikirnumber");
 
 
 
@@ -59,7 +59,7 @@ public class ZikirListInfo extends AppCompatActivity {
 
         Query query = FirebaseDatabase.getInstance()
                 .getReference()
-                .child("জিকির").child("প্রতিদিনের জিকির").child("জিকির সমূহ");
+                .child("জিকির").child("প্রতিদিনের জিকির").child(zikirnumber).child("জিকির সমূহ");
         FirebaseRecyclerOptions<ZikirAyat> options =
                 new FirebaseRecyclerOptions.Builder<ZikirAyat>()
                         .setQuery(query, ZikirAyat.class)
