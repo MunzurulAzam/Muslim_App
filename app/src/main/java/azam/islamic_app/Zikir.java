@@ -25,10 +25,10 @@ import com.google.firebase.database.Query;
 public class Zikir extends AppCompatActivity {
 
 
-    String zikir_no;
-
     RecyclerView recyclerView;
     ImageView imageView;
+
+    String zikir_no;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
