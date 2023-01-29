@@ -24,6 +24,9 @@ import com.google.firebase.database.Query;
 
 public class Zikir extends AppCompatActivity {
 
+
+    String key;
+
     RecyclerView recyclerView;
     ImageView imageView;
 
@@ -78,19 +81,19 @@ public class Zikir extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(Zikir.PackageViewHolder holder, int position, ZikirErList zikirErList) {
                 holder.setzikir_name(zikirErList.getZikir_name());
-//                holder.mView.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    //recycler view pull page
-//                    public void onClick(View v) {
-//                        System.out.println(String.valueOf(holder.getBindingAdapterPosition()+1));
-//                        Intent myIntent = new Intent(QuranErDua.this,SingleSuraAyat.class);
-//                        myIntent.putExtra("shuraNumber",String.valueOf(holder.getBindingAdapterPosition()+1));
-//                        startActivity(myIntent);
-//
-//                    }
-//                });
-//
-//                //recycler view pull page end
+                holder.mView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    //recycler view pull page
+                    public void onClick(View v) {
+                        System.out.println(String.valueOf(holder.getBindingAdapterPosition()+1));
+                        Intent myIntent = new Intent(Zikir.this,ZikirListInfo.class);
+                        myIntent.putExtra("key",String.valueOf(holder.getBindingAdapterPosition()+1));
+                        startActivity(myIntent);
+
+                    }
+                });
+
+                //recycler view pull page end
             }
         };
         recyclerView.setAdapter(adapter);
