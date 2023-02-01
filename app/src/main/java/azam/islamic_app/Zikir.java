@@ -81,6 +81,7 @@ public class Zikir extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(Zikir.PackageViewHolder holder, int position, ZikirErList zikirErList) {
                 holder.setzikir_name(zikirErList.getZikir_name());
+                holder.setzikir_Number(zikirErList.getZikir_Number());
                 holder.mView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     //recycler view pull page
@@ -115,6 +116,11 @@ public class Zikir extends AppCompatActivity {
         public void setzikir_name(String zikir_name_txt) {
             TextView zikir_name = (TextView) mView.findViewById(R.id.sura);
             zikir_name.setText(zikir_name_txt);
+        }
+
+        public void setzikir_Number(String zikir_Number_txt) {
+            TextView zikir_Number = (TextView) mView.findViewById(R.id.counter);
+            zikir_Number.setText(zikir_Number_txt);
         }
 
 
