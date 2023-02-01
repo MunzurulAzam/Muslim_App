@@ -5,14 +5,17 @@ public class ZikirAyat {
     String arbi;
     String ortho;
     String ucharon;
+    String tottho;
+
 
     public ZikirAyat() {
     }
 
-    public ZikirAyat(String arbi, String ortho, String ucharon) {
+    public ZikirAyat(String arbi, String ortho, String ucharon, String tottho) {
         this.arbi = arbi;
         this.ortho = ortho;
         this.ucharon = ucharon;
+        this.tottho = tottho;
     }
 
     public String getArbi() {
@@ -37,5 +40,13 @@ public class ZikirAyat {
 
     public void setUcharon(String ucharon) {
         this.ucharon = ucharon;
+    }
+
+    public String getTottho() {
+        return tottho;
+    }
+
+    public void setTottho(String tottho) {
+        this.tottho = tottho;
     }
 }
