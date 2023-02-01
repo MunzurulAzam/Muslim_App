@@ -28,7 +28,7 @@ public class Zikir extends AppCompatActivity {
     RecyclerView recyclerView;
     ImageView imageView;
 
-    String zikir_no;
+    String zikir_Number;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,7 +87,7 @@ public class Zikir extends AppCompatActivity {
                     public void onClick(View v) {
                         System.out.println(String.valueOf(holder.getBindingAdapterPosition()+1));
                         Intent myIntent = new Intent(Zikir.this,ZikirListInfo.class);
-                        myIntent.putExtra("zikir_no",String.valueOf(holder.getBindingAdapterPosition()+1));
+                        myIntent.putExtra("zikir_Number",String.valueOf(holder.getBindingAdapterPosition()+1));
                         startActivity(myIntent);
 
                     }
