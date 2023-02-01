@@ -111,12 +111,12 @@ public class ZikirListInfo extends AppCompatActivity {
         }
 
         public void setortho(String uccharon_txt) {
-            TextView uccharon = (TextView) mView.findViewById(R.id.ucharonTxtView);
+            TextView uccharon = (TextView) mView.findViewById(R.id.anubadTxtView);
             uccharon.setText(uccharon_txt);
         }
 
         public void ucharon(String banglameaning_txt) {
-            TextView banglameaning = (TextView) mView.findViewById(R.id.anubadTxtView);
+            TextView banglameaning = (TextView) mView.findViewById(R.id.ucharonTxtView);
             banglameaning.setText(banglameaning_txt);
         }
 
