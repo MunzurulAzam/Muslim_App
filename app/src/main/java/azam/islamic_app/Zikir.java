@@ -63,7 +63,7 @@ public class Zikir extends AppCompatActivity {
 
         Query query = FirebaseDatabase.getInstance()
                 .getReference()
-                .child("জিকির").child("প্রতিদিনের জিকির").child("জিকির সমূহ");
+                .child("জিকির").child("জিকির তালিকা");
         FirebaseRecyclerOptions<ZikirErList> options =
                 new FirebaseRecyclerOptions.Builder<ZikirErList>()
                         .setQuery(query, ZikirErList.class)
