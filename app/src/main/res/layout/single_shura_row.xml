@@ -79,7 +79,7 @@
             android:paddingTop="10dp"
             android:paddingRight="10dp"
             android:paddingBottom="5dp"
-            android:text="অনুবাদঃ "
+            android:text="অনুবাদঃ"
             android:textColor="@color/black"
             android:textSize="15dp" />
 
