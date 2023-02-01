@@ -79,6 +79,7 @@ public class ZikirListInfo extends AppCompatActivity {
                 holder.setarbi(zikirAyat.getArbi());
                 holder.setortho(zikirAyat.getOrtho());
                 holder.ucharon(zikirAyat.getUcharon());
+                holder.tottho(zikirAyat.getTottho());
 
             }
         };
@@ -117,6 +118,12 @@ public class ZikirListInfo extends AppCompatActivity {
         public void ucharon(String banglameaning_txt) {
             TextView banglameaning = (TextView) mView.findViewById(R.id.anubadTxtView);
             banglameaning.setText(banglameaning_txt);
+        }
+
+
+        public void tottho(String tottho_txt) {
+            TextView tottho = (TextView) mView.findViewById(R.id.totthoTxtView);
+            tottho.setText(tottho_txt);
         }
 
     }
