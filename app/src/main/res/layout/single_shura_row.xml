@@ -108,7 +108,7 @@
             android:paddingTop="10dp"
             android:paddingRight="10dp"
             android:paddingBottom="5dp"
-            android:text="তথ্যঃ      "
+            android:text=" তথ্যঃ     "
             android:textColor="@color/black"
             android:textSize="15dp" />
 
