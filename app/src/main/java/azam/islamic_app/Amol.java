@@ -54,37 +54,37 @@ public class Amol extends AppCompatActivity {
 
         //        start code
 
-        recyclerView = (RecyclerView) findViewById(R.id.);
+        recyclerView = (RecyclerView) findViewById(R.id.reAmol);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         Query query = FirebaseDatabase.getInstance()
                 .getReference()
-                .child("জিকির").child("জিকির তালিকা");
-        FirebaseRecyclerOptions<ZikirErList> options =
-                new FirebaseRecyclerOptions.Builder<ZikirErList>()
-                        .setQuery(query, ZikirErList.class)
+                .child("আমল").child("আমল_তালিকা");
+        FirebaseRecyclerOptions<AmolList_Info> options =
+                new FirebaseRecyclerOptions.Builder<AmolList_Info>()
+                        .setQuery(query, AmolList_Info.class)
                         .build();
 
 
-        FirebaseRecyclerAdapter adapter = new FirebaseRecyclerAdapter<ZikirErList, Zikir.PackageViewHolder>(options) {
+        FirebaseRecyclerAdapter adapter = new FirebaseRecyclerAdapter<AmolList_Info, Amol.PackageViewHolder>(options) {
             @Override
-            public Zikir.PackageViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            public Amol.PackageViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
                 View view = LayoutInflater.from(parent.getContext())
                         .inflate(R.layout.item_design, parent, false);
-                return new Zikir.PackageViewHolder(view);
+                return new Amol.PackageViewHolder(view);
             }
 
             @Override
-            protected void onBindViewHolder(Zikir.PackageViewHolder holder, int position, ZikirErList zikirErList) {
-                holder.setzikir_name(zikirErList.getZikir_name());
-                holder.setzikir_Number(zikirErList.getZikir_Number());
+            protected void onBindViewHolder(Amol.PackageViewHolder holder, int position, AmolList_Info amolList_info) {
+                holder.setamol_name(amolList_info.getAmol_name());
+                holder.setamol_Number(amolList_info.getAmol_Number());
                 holder.mView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     //recycler view pull page
                     public void onClick(View v) {
                         System.out.println(String.valueOf(holder.getBindingAdapterPosition()+1));
-                        Intent myIntent = new Intent(Zikir.this,ZikirListInfo.class);
-                        myIntent.putExtra("zikir_Number",String.valueOf(holder.getBindingAdapterPosition()+1));
+                        Intent myIntent = new Intent(Amol.this,AmolList_Info.class);
+                        myIntent.putExtra("amol_Number",String.valueOf(holder.getBindingAdapterPosition()+1));
                         startActivity(myIntent);
 
                     }
@@ -109,14 +109,14 @@ public class Amol extends AppCompatActivity {
             mView = itemView;
         }
 
-        public void setzikir_name(String zikir_name_txt) {
-            TextView zikir_name = (TextView) mView.findViewById(R.id.sura);
-            zikir_name.setText(zikir_name_txt);
+        public void setamol_name(String amol_name_txt) {
+            TextView amol_name = (TextView) mView.findViewById(R.id.sura);
+            amol_name.setText(amol_name_txt);
         }
 
-        public void setzikir_Number(String zikir_Number_txt) {
-            TextView zikir_Number = (TextView) mView.findViewById(R.id.counter);
-            zikir_Number.setText(zikir_Number_txt);
+        public void setamol_Number(String amol_Number_txt) {
+            TextView amol_Number = (TextView) mView.findViewById(R.id.counter);
+            amol_Number.setText(amol_Number_txt);
         }
 
 
