@@ -83,7 +83,7 @@ public class Amol extends AppCompatActivity {
                     //recycler view pull page
                     public void onClick(View v) {
                         System.out.println(String.valueOf(holder.getBindingAdapterPosition()+1));
-                        Intent myIntent = new Intent(Amol.this,AmolList_Info.class);
+                        Intent myIntent = new Intent(Amol.this,AmolErList.class);
                         myIntent.putExtra("amol_Number",String.valueOf(holder.getBindingAdapterPosition()+1));
                         startActivity(myIntent);
 

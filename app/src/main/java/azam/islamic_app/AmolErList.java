@@ -137,5 +137,4 @@ public class AmolErList extends AppCompatActivity {
 
 
 
-    }
-}
+
