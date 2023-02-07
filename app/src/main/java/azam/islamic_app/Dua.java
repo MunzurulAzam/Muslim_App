@@ -25,6 +25,7 @@ import com.google.firebase.database.Query;
 public class Dua extends AppCompatActivity {
 
     ImageView imageView;
+    RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,36 +54,36 @@ public class Dua extends AppCompatActivity {
 
         //        start code
 
-        recyclerView = (RecyclerView) findViewById(R.id.reAmol);
+        recyclerView = (RecyclerView) findViewById(R.id.reDuaa);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         Query query = FirebaseDatabase.getInstance()
                 .getReference()
-                .child("আমল").child("আমল_তালিকা");
-        FirebaseRecyclerOptions<AmolList_Info> options =
-                new FirebaseRecyclerOptions.Builder<AmolList_Info>()
-                        .setQuery(query, AmolList_Info.class)
+                .child("দোয়া").child("দোয়া_তালিকা");
+        FirebaseRecyclerOptions<Dua_list_info> options =
+                new FirebaseRecyclerOptions.Builder<Dua_list_info>()
+                        .setQuery(query, Dua_list_info.class)
                         .build();
 
 
-        FirebaseRecyclerAdapter adapter = new FirebaseRecyclerAdapter<AmolList_Info, Amol.PackageViewHolder>(options) {
+        FirebaseRecyclerAdapter adapter = new FirebaseRecyclerAdapter<Dua_list_info, Dua.PackageViewHolder>(options) {
             @Override
-            public Amol.PackageViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            public Dua.PackageViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
                 View view = LayoutInflater.from(parent.getContext())
                         .inflate(R.layout.item_design, parent, false);
-                return new Amol.PackageViewHolder(view);
+                return new Dua.PackageViewHolder(view);
             }
 
             @Override
-            protected void onBindViewHolder(Amol.PackageViewHolder holder, int position, AmolList_Info amolList_info) {
-                holder.setamol_name(amolList_info.getAmol_name());
-                holder.setamol_Number(amolList_info.getAmol_Number());
+            protected void onBindViewHolder(Dua.PackageViewHolder holder, int position, Dua_list_info dua_list_info) {
+                holder.setdua_name(dua_list_info.getDua_name());
+                holder.setdua_Number(dua_list_info.getDua_Number());
                 holder.mView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     //recycler view pull page
                     public void onClick(View v) {
                         System.out.println(String.valueOf(holder.getBindingAdapterPosition()+1));
-                        Intent myIntent = new Intent(Amol.this,AmolErList.class);
+                        Intent myIntent = new Intent(Dua.this,Dua_er_list.class);
                         myIntent.putExtra("amol_Number",String.valueOf(holder.getBindingAdapterPosition()+1));
                         startActivity(myIntent);
 
@@ -108,14 +109,14 @@ public class Dua extends AppCompatActivity {
             mView = itemView;
         }
 
-        public void setamol_name(String amol_name_txt) {
-            TextView amol_name = (TextView) mView.findViewById(R.id.sura);
-            amol_name.setText(amol_name_txt);
+        public void setdua_name(String dua_name_txt) {
+            TextView dua_name = (TextView) mView.findViewById(R.id.sura);
+            dua_name.setText(dua_name_txt);
         }
 
-        public void setamol_Number(String amol_Number_txt) {
-            TextView amol_Number = (TextView) mView.findViewById(R.id.counter);
-            amol_Number.setText(amol_Number_txt);
+        public void setdua_Number(String dua_Number_txt) {
+            TextView dua_Number = (TextView) mView.findViewById(R.id.counter);
+            dua_Number.setText(dua_Number_txt);
         }
 
 

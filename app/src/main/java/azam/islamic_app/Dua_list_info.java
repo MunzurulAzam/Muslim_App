@@ -1,3 +1,5 @@
+package azam.islamic_app;
+
 public class Dua_list_info {
     String dua_Number;
     String dua_name;
