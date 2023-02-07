@@ -84,7 +84,7 @@ public class Dua extends AppCompatActivity {
                     public void onClick(View v) {
                         System.out.println(String.valueOf(holder.getBindingAdapterPosition()+1));
                         Intent myIntent = new Intent(Dua.this,Dua_er_list.class);
-                        myIntent.putExtra("amol_Number",String.valueOf(holder.getBindingAdapterPosition()+1));
+                        myIntent.putExtra("dua_Number",String.valueOf(holder.getBindingAdapterPosition()+1));
                         startActivity(myIntent);
 
                     }
