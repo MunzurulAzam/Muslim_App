@@ -126,7 +126,7 @@ public class AmolErList extends AppCompatActivity {
         }
 
     }
-    //nice nice
+    //nice
 
 
 
