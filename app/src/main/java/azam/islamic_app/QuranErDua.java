@@ -61,7 +61,7 @@ public class QuranErDua extends AppCompatActivity {
 
         Query query = FirebaseDatabase.getInstance()
                 .getReference()
-                .child("কোরানের দোয়া").child("কোরানের সুরা").child("কোরানের সুরা নাম সমূহ");
+                .child("কুরানের_দোয়া").child("কুরানের_দোয়া_তালিকা");
         FirebaseRecyclerOptions<SuraShumoho> options =
                 new FirebaseRecyclerOptions.Builder<SuraShumoho>()
                         .setQuery(query, SuraShumoho.class)
@@ -78,7 +78,7 @@ public class QuranErDua extends AppCompatActivity {
 
             @Override
             protected void onBindViewHolder(QuranErDua.PackageViewHolder holder, int position, SuraShumoho suraShumoho) {
-                holder.setshura_name(suraShumoho.getShura_name());
+                holder.setQuran_Er_Dua_name(suraShumoho.getQuran_Er_Dua_name());
                 holder.mView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     //recycler view pull page
@@ -110,7 +110,7 @@ public class QuranErDua extends AppCompatActivity {
             mView = itemView;
         }
 
-        public void setshura_name(String shura_name_txt) {
+        public void setQuran_Er_Dua_name(String shura_name_txt) {
             TextView shura_name = (TextView) mView.findViewById(R.id.sura);
             shura_name.setText(shura_name_txt);
         }

@@ -1,22 +1,18 @@
 package azam.islamic_app;
 
 public class SuraShumoho {
-    String shura_name;
+    String quran_Er_Dua_name;
 //    String shura_no;
 
 
     public SuraShumoho() {
     }
 
-    public SuraShumoho(String shura_name) {
-        this.shura_name = shura_name;
+    public String getQuran_Er_Dua_name() {
+        return quran_Er_Dua_name;
     }
 
-    public String getShura_name() {
-        return shura_name;
-    }
-
-    public void setShura_name(String shura_name) {
-        this.shura_name = shura_name;
+    public void setQuran_Er_Dua_name(String quran_Er_Dua_name) {
+        this.quran_Er_Dua_name = quran_Er_Dua_name;
     }
 }
