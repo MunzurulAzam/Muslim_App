@@ -1,41 +1,51 @@
 package azam.islamic_app;
 
 public class ShuraAyat {
-    String arabic;
-    String uccharon;
-    String banglameaning;
 
+    String arbi;
+    String ortho;
+    String tottho;
+    String ucharon;
 
     public ShuraAyat() {
     }
 
-    public ShuraAyat(String arabic, String uccharon, String banglameaning) {
-        this.arabic = arabic;
-        this.uccharon = uccharon;
-        this.banglameaning = banglameaning;
+    public ShuraAyat(String arbi, String ortho, String tottho, String ucharon) {
+        this.arbi = arbi;
+        this.ortho = ortho;
+        this.tottho = tottho;
+        this.ucharon = ucharon;
     }
 
-    public String getArabic() {
-        return arabic;
+    public String getArbi() {
+        return arbi;
     }
 
-    public void setArabic(String arabic) {
-        this.arabic = arabic;
+    public void setArbi(String arbi) {
+        this.arbi = arbi;
     }
 
-    public String getUccharon() {
-        return uccharon;
+    public String getOrtho() {
+        return ortho;
     }
 
-    public void setUccharon(String uccharon) {
-        this.uccharon = uccharon;
+    public void setOrtho(String ortho) {
+        this.ortho = ortho;
     }
 
-    public String getBanglameaning() {
-        return banglameaning;
+    public String getTottho() {
+        return tottho;
     }
 
-    public void setBanglameaning(String banglameaning) {
-        this.banglameaning = banglameaning;
+    public void setTottho(String tottho) {
+        this.tottho = tottho;
+    }
+
+    public String getUcharon() {
+        return ucharon;
+    }
+
+    public void setUcharon(String ucharon) {
+        this.ucharon = ucharon;
     }
 }

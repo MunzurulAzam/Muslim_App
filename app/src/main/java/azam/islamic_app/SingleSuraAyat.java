@@ -55,7 +55,7 @@ public class SingleSuraAyat extends AppCompatActivity {
 
         Query query = FirebaseDatabase.getInstance()
                 .getReference()
-                .child("কোরানের দোয়া").child("কোরানের সুরা").child(shuraNumber).child("ayat");
+                .child("কুরানের_দোয়া").child("কুরআনের_দোয়ার_বিষয়বস্তু").child(shuraNumber);
         FirebaseRecyclerOptions<ShuraAyat> options =
                 new FirebaseRecyclerOptions.Builder<ShuraAyat>()
                         .setQuery(query, ShuraAyat.class)
@@ -72,9 +72,10 @@ public class SingleSuraAyat extends AppCompatActivity {
 
             @Override
             protected void onBindViewHolder(SingleSuraAyat.PackageViewHolder holder, int position, ShuraAyat shuraAyat) {
-                holder.setarabic(shuraAyat.getArabic());
-                holder.setuccharon(shuraAyat.getUccharon());
-                holder.setbanglameaning(shuraAyat.getBanglameaning());
+                holder.setarabic(shuraAyat.getArbi());
+                holder.setuccharon(shuraAyat.getOrtho());
+                holder.setbanglameaning(shuraAyat.getUcharon());
+                holder.setTottho(shuraAyat.getTottho());
 
             }
         };
@@ -113,6 +114,10 @@ public class SingleSuraAyat extends AppCompatActivity {
         public void setbanglameaning(String banglameaning_txt) {
             TextView banglameaning = (TextView) mView.findViewById(R.id.anubadTxtView);
             banglameaning.setText(banglameaning_txt);
+        }
+        public void setTottho(String Tottho_txt) {
+            TextView Tottho = (TextView) mView.findViewById(R.id.totthoTxtView);
+            Tottho.setText(Tottho_txt);
         }
 
     }
